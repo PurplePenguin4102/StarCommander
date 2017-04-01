@@ -1,4 +1,4 @@
-class Spaceship 
+class Spaceship < StellarObject
 	attr_accessor :vx, :vy, :vz
 
 	def increase_yaw(amount)
@@ -13,3 +13,4 @@ class Spaceship
 
 	end
 end
+

@@ -61,6 +61,12 @@ class StellarObjectTests < Minitest::Test
 	end
 
 	def test_get_relative_coordinates
+
+		origin = StellarObject.new [453, -1234, 25]
+		obj = StellarObject.new [21, 134, -1]
+		puts "==="
+		puts "Rando coords", origin.display_coords_rads(obj)
+		puts "==="
 		origin = StellarObject.new [0, 0, 0]
 		obj = StellarObject.new [1, 1, 1]
 		puts "==="

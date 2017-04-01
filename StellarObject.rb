@@ -42,9 +42,11 @@ class StellarObject
 	end
 
 	def display_coords_rads(stellar_object)
+		theta = self.get_theta(stellar_object)
+		phi = self.get_phi(stellar_object)
 		%Q(Relative to universal coordinated center pointing y+ #{stellar_object.name} is 
 #{self.distance_to(stellar_object)}Mkm away at 
-\u03B8 #{self.get_theta(stellar_object)} and 
-\u03D5 #{self.get_phi(stellar_object)}).encode('utf-8')
+\u03B8 #{theta} #{theta.yaw_description}-side
+\u03D5 #{phi} #{phi.pitch_description}-side).encode('utf-8')
 	end
 end

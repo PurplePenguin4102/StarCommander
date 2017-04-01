@@ -19,7 +19,7 @@ class Player
  	end
 
  	def prompt_name
- 		puts_term "Please register your callsign, Star Commander (blank for random name)"
+ 		(TerminalTyper.new).puts_term "Please register your callsign, Star Commander (blank for random name)"
 		print "::> "
 		raw_text = gets.chomp
 		return raw_text == "" ? Rnd_player_names.sample : raw_text;
