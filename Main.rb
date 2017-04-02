@@ -3,6 +3,11 @@ require './Requirements'
 puts "\e[H\e[2J"
 
 Debug = true
+music_player = MusicPlayer.new
+
+if music_player.is_valid?
+	music_player.play_track
+end
 
 game_state = GameState.new
 loop do

@@ -1,3 +1,4 @@
+require './MusicPlayer'
 require './StellarObject'
 require './Spaceship'
 require './Planet'
