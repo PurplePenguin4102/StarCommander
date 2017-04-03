@@ -54,6 +54,19 @@ class TextParserTests < Minitest::Test
 		assert action.noun == scan_luthor.noun
 	end
 
+	def test_view_battle
+		text_parser = TextParser.new
+		action = text_parser.read("view battles")
+		assert action.verb == :INSPECT
+		assert action.noun == :BATTLES
+	end
+
+	def test_view_specific_battle
+		text_parser = TextParser.new
+		action = text_parser.read("command battle 1")
+		assert action.verb = :COMMAND
+		assert actoun.noun = "1"
+	end
 
 	def test_text_parser_read_end
 		text_parser = TextParser.new

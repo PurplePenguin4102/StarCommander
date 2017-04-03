@@ -54,9 +54,12 @@ A spaceship's resistance to damage is a combination of
 - the tech level of its turrets vs the tech level of the drop pods
 - the fighting spirit of its marines/crew vs the fighting spirit of the attacking marines
 
-
 =end
 
-class SpaceshipTest
+class SpaceshipTest < Miniteest::Test
+
+	def test_constructor
+
+	end
 
 end
