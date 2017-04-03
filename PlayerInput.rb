@@ -1,4 +1,4 @@
-def get_player_input (game_state)
+def get_player_input (game_state, music_player)
 	text_parser = TextParser.new
 	loop do
 		print "Your move chum ::> "
@@ -9,6 +9,12 @@ def get_player_input (game_state)
 			puts game_state.star_field.get_planet_names
 		when :SCAN_ALL
 			Scanner.scan_all(game_state)
+		when :MUSIC_ON
+			music_player.play_music
+		when :MUSIC_OFF
+			music_player.stop_music
+		when :MUSIC_TOGGLE
+			music_player.toggle_music
 		end
 		
 		case inp.verb

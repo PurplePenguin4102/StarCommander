@@ -6,13 +6,14 @@ Debug = true
 music_player = MusicPlayer.new
 
 if music_player.is_valid?
-	music_player.play_track
+	puts "hello dolly!!!"
+	music_player.play_music
 end
 
 game_state = GameState.new
 loop do
 	print_game_state(game_state)
-	player_input = get_player_input(game_state)
+	player_input = get_player_input(game_state, music_player)
 	update_game_state(game_state, player_input)
 	evaluate_score
 	enemy_input = calculate_enemy_move
@@ -21,3 +22,5 @@ loop do
 		break
 	end
 end
+
+music_player.stop_music

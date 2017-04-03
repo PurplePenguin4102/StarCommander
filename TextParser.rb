@@ -30,6 +30,27 @@ class TextParser
 				:verb => :END,
 				:noun => :TURN
 			}
+		when "music", "m"
+			{
+				:raw_input => raw_text,
+				:action => :MUSIC_TOGGLE,
+				:verb => :TOGGLE,
+				:noun => :MUSIC
+			}
+		when "music off", "m off"
+			{
+				:raw_input => raw_text,
+				:action => :MUSIC_OFF,
+				:verb => :OFF,
+				:noun => :MUSIC
+			}
+		when "music on", "m on"
+			{
+				:raw_input => raw_text,
+				:action => :MUSIC_ON,
+				:verb => :ON,
+				:noun => :MUSIC
+			}
 		else
 			{
 				:raw_input => raw_text, 
