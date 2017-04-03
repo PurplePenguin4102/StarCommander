@@ -6,7 +6,6 @@ Debug = true
 music_player = MusicPlayer.new
 
 if music_player.is_valid?
-	puts "hello dolly!!!"
 	music_player.play_music
 end
 
