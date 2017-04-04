@@ -4,25 +4,16 @@ def get_player_input (game_state, music_player)
 		print "Your move chum ::> "
 		inp = text_parser.read(gets.chomp)
 		
-		case inp.action
-		when :INSPECT_ALL
-			puts game_state.star_field.get_planet_names
-		when :SCAN_ALL
-			Scanner.scan_all(game_state)
+		if inp.action == :DO_NOTHING
+			next
 		end
 
 		if inp.noun == :MUSIC
 			handle_music_player(inp.verb, music_player)
-		end
-		
-		case inp.verb
-		when :SCAN_PLANET
-			Scanner.scan_planet(game_state, inp.noun)
+			next
 		end
 
-		if (inp.action == :END_TURN)
-			return ""
-		end
+		return inp
 	end
 end
 

@@ -7,6 +7,9 @@ class Spaceship < StellarObject
 	attr_accessor :crew
 	attr_accessor :personnel
 	attr_accessor :shields
+	attr_accessor :armor
+	attr_accessor :weapons
+	attr_accessor :components
 
 	def increase_yaw(amount)
 
@@ -25,5 +28,10 @@ class Spaceship < StellarObject
 
 	def weight?
 	end
+
+	def join_battle
+		
+	end
+
 end
 

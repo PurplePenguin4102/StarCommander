@@ -65,7 +65,7 @@ class TextParserTests < Minitest::Test
 		text_parser = TextParser.new
 		action = text_parser.read("command battle 1")
 		assert action.verb = :COMMAND
-		assert actoun.noun = "1"
+		assert action.noun = "1"
 	end
 
 	def test_text_parser_read_end

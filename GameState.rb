@@ -20,11 +20,6 @@ class GameState
 		@lore_wizard = LoreWizard.new
 	end
 
-	def make_players (plr_name = "")
-		@player1 = Player.new(plr_name)
-		@player2 = Player.new
-	end
-
 	def inspect
 		"Players :: #{@players}\nSystem :: #{@star_field}\nPlayer 1 #{@player1}\nPlayer 2 #{@player2}"
 	end

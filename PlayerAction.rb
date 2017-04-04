@@ -7,17 +7,8 @@ class PlayerAction
 		@verb = params.fetch(:verb, :DO)
 		@noun = params.fetch(:noun, :NOTHING)
 	end
+
+	def to_s
+		"Player's action :: #{@raw_input}, #{@action}, #{@verb}, #{@noun}"
+	end
 end
-
-#verbs
-:DO
-:BUILD
-:SCAN
-:INSPECT #alias for "look at"
-
-#nouns
-:PLANET
-:SHIP
-:STAR
-:ALL
-:NOTHING

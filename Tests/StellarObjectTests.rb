@@ -24,6 +24,13 @@ Roll -
 
 class StellarObjectTests < Minitest::Test
 
+	def test_empty_constructor
+		org = StellarObject.new
+		assert org.x == 0
+		assert org.y == 0
+		assert org.z == 0
+	end
+
 	def test_constructor
 		obj = StellarObject.new [1, 5, 10]
 		assert obj.x == 1

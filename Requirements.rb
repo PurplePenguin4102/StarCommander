@@ -1,6 +1,7 @@
 require './MusicPlayer'
 require './StellarObject'
 require './Spaceships/Spaceship'
+require './Spaceships/Battle'
 require './Planet'
 require './PlayerInput'
 require './GamePrint'

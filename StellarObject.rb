@@ -1,11 +1,19 @@
 class StellarObject
 	attr_accessor :x, :y, :z, :name
 
-	def initialize(coords, name = nil)
-		@x = coords[0]
-		@y = coords[1]
-		@z = coords[2]
+	def initialize(coords = nil, name = nil)
+		if (coords)
+			set_coords(coords)
+		else
+			set_coords([0, 0, 0])
+		end
 		@name = name || "object"
+	end
+
+	def set_coords(coords)
+			@x = coords[0]
+			@y = coords[1]
+			@z = coords[2]
 	end
 
 	def distance_to(stellar_object)
