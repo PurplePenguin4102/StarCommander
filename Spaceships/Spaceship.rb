@@ -29,8 +29,8 @@ class Spaceship < StellarObject
 	def weight?
 	end
 
-	def join_battle
-		
+	def join_battle (battle)
+		battle.ships << this
 	end
 
 end
