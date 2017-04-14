@@ -30,7 +30,7 @@ class Spaceship < StellarObject
 	end
 
 	def join_battle (battle)
-		battle.ships << this
+		battle.ships << self
 	end
 
 end
