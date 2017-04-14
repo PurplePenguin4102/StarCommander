@@ -1,5 +1,7 @@
 class Spaceship < StellarObject
 	attr_accessor :vx, :vy, :vz
+	attr_accessor :name
+	attr_accessor :designation
 	attr_accessor :thrusters
 	attr_accessor :sails
 	attr_accessor :captain
@@ -33,5 +35,8 @@ class Spaceship < StellarObject
 		battle.ships << self
 	end
 
+	def to_s
+		"#{@name}, #{@designation} class"
+	end
 end
 

@@ -8,7 +8,7 @@ class LoreWizard
 		%Q(
 Welcome star commander "#{game.player1.name}". The year is #{@year}. It has been #{@time} years since the last great planetary conflict.
 
-As you know, the #{game.player1.empire.name} empire was victorious over the evil #{game.player2.empire.name}. As a decorated military hero, you have
+As you know, the #{game.player1.empire.name} empire was victorious over the evil #{game.player2.empire.plural}. As a decorated military hero, you have
 been tasked to secure the frontier sectors. You move your family to the #{game.star_field.field_name} star field, and prepare
 yourself mentally for the difficult task ahead.
 
