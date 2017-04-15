@@ -6,7 +6,6 @@ class Thruster
   attr_accessor :description
   attr_accessor :thrust_ability #in MW
   
-  
   def initialize
   end
 end

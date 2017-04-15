@@ -51,7 +51,7 @@ class TextParser
 				:verb => :ON,
 				:noun => :MUSIC
 			}
-		when "view battles", "look at battles", "see battles"
+		when "view battles", "look at battles", "see battles", "inspect battles", "look battles"
 			{
 				:raw_input => raw_text,
 				:action => :INSPECT_BATTLES,

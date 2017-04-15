@@ -18,7 +18,7 @@ if Debug
 	game_state.player2.ships << Spaceship.new
 	game_state.player2.ships[0].name = "Galileo"
 	game_state.player2.ships[0].designation = "Cruiser"
-	battle = Battle.new [game_state.player1.ships[0], game_state.player2.ships[0]]
+	battle = Battle.new(1, [game_state.player1.ships[0], game_state.player2.ships[0]])
 	game_state.battles_running << battle
 end
 

@@ -21,7 +21,7 @@ class BattleTest < Minitest::Test
 		ships = []
 		ships << Spaceship.new
 		ships << Spaceship.new
-		battle = Battle.new ships
+		battle = Battle.new(1, ships)
 
 		assert ships[0].y != ships[1].y 
 	end

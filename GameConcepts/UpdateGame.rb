@@ -1,5 +1,3 @@
-require './StarField'
-
 def update_game_state (game_state, player_input)
 	puts "Your move has made an effect!!"
 	if player_input == :END_GAME

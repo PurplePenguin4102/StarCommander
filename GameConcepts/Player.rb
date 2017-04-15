@@ -30,6 +30,6 @@ class Player
  	end
 
  	def to_s
- 		"Callsign : #{@name} -- ships/planets : #{@ships[0]}/#{@planets}"
+ 		"Callsign : #{@name} -- ships/planets : #{@ships.count}/#{@planets.count}"
  	end
 end
