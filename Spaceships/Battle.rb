@@ -1,6 +1,6 @@
 class Battle
 	attr_accessor :ships
-	attr_accessor :battle_id
+	attr_accessor :battle_id 
 
 	def initialize(id, ships)
 		ships.each do |ship| 
