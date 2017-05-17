@@ -11,7 +11,7 @@ end
 
 game_state = GameState.new
 
-if Debug 
+if Debug
 	game_state.player1.ships << Spaceship.new
 	game_state.player1.ships[0].name = "Hellraiser"
 	game_state.player1.ships[0].designation = "Cruiser"
