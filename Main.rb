@@ -9,7 +9,7 @@ if music_player.is_valid?
 	music_player.play_music
 end
 
-game_state = GameState.new
+game_state = GameState.new 
 
 if Debug
 	game_state.player1.ships << Spaceship.new
